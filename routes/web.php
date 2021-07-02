@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\Controller;
-use App\Http\Controllers\ControllerStudent;
+use App\Http\Controllers\ControllerApartments;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[ControllerStudent::class,"all"]);
-Route::get('/student',[ControllerStudent::class,"all"]);
-Route::get('/student/add',[ControllerStudent::class,"add"]);
-Route::post('/student/save',[ControllerStudent::class,"save"]);
+Route::get('/',[ControllerApartments::class,"list"]);
+Route::get('/apartment',[ControllerApartments::class,"list"]);
